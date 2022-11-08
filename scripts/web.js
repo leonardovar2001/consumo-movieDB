@@ -8,7 +8,7 @@ const api = axios.create({
       'api_key': API_KEY,
     },
   });
-   
+    
 async function getTrendingMoviesPreview() {
     const { data } = await api('trending/movie/day');
     const movies = data.results;
